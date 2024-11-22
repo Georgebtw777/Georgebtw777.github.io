@@ -1,0 +1,124 @@
+.grid-container{
+    display:grid;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    
+    grid-template-rows: 70px 1fr 80px;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+    }
+
+.header{
+    grid-area: header;
+    background-color:  #333;
+    color: white; 
+    text-align: center;
+    line-height: 60px;
+    
+font-size: 40px;
+}
+
+.aside{
+    grid-area: aside;
+background-color:#f4f4f4 ;
+padding: 10px;
+
+}
+.aside ul{
+    font-size: 35px;
+    text-decoration-line: none;
+}
+
+.main{
+    background-image: url("Image/Bild.jpg") ;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+grid-area: main; 
+background-color:white ;
+padding: 20px;
+
+font-family: 'Times New Roman', Times, serif, sans-serif;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+text-align: center;
+}
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #ffffff;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    margin-bottom: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+li:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-decoration: none;
+            color: #3498db;
+            justify-content: center;
+align-items: center;
+text-align: center;
+    margin-bottom: 150px;
+}
+
+h1:hover {
+    color: #2980b9;
+}
+
+p {
+    font-size: 1.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.Content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px; 
+}
+.text-content{
+    font-size: 25px; 
+    padding-left: 20px;
+}
+
+.Image-Content{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+    gap: 200px;
+}
+
+.Image-Content img{
+width: 300px;
+    max-width: 500px;
+    border-radius: 30px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+font-size: 40px;
+}
